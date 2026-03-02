@@ -21,6 +21,21 @@
 
 
 
+<script>
+  function openCvModal() {
+    document.getElementById("cvModal").style.display = "block";
+  }
+
+  function closeCvModal() {
+    document.getElementById("cvModal").style.display = "none";
+  }
+
+  window.onclick = function(e) {
+    const modal = document.getElementById("cvModal");
+    if (e.target === modal) modal.style.display = "none";
+  }
+</script>
+
 
 <body>
 <!-- ================= NAVBAR ================= -->
@@ -51,12 +66,25 @@
       <h1>Nassim Arous</h1>
       <h2>Élève Ingénieur – IA & Data</h2>
       <p>À la recherche d’un stage technique</p>
-      <a href="C:\Users\nassi\OneDrive\Bureau\private\cv nassim (1).pdf" target="_blank" class="btn-cv">Voir le CV</a>
-
+<button class="btn-cv" onclick="openCvModal()">Voir le CV</button>
     </div>
   </div>
 </header>
+<!-- ================= MODAL CV ================= -->
+<div id="cvModal" class="cv-modal">
+  <div class="cv-modal-content">
+    <span class="close" onclick="closeCvModal()">&times;</span>
+    <h2>Choisir un CV</h2>
 
+    <a href="cv/NassimArousCvCanadien.pdf" target="_blank" class="cv-choice">
+         CV Canadien
+    </a>
+
+    <a href="cv/NassimArousCV.pdf" target="_blank" class="cv-choice">
+       CV Classique
+    </a>
+  </div>
+</div>
 
 
 <!-- ================= À PROPOS ================= -->

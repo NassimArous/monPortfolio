@@ -237,6 +237,48 @@ section:nth-of-type(4) {animation-delay: 0.9s;}
   margin-right: 10px;
 }
 
+
+
+/* ===== MODAL CV ===== */
+.cv-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.cv-modal-content {
+  background: #fff;
+  margin: 15% auto;
+  padding: 30px;
+  max-width: 420px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.cv-choice {
+  display: block;
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 8px;
+  background: #007bff;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cv-choice:hover {
+  background: #0056b3;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
 /* ================= Footer ================= */
 footer {
   text-align: center;
