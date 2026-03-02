@@ -6,51 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-
-
-
-
-<script>
-  const burger = document.getElementById('burger');
-  const navLinks = document.getElementById('nav-links');
-
-  burger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
-
-
-
-<script>
-  function openCvModal() {
-    document.getElementById("cvModal").style.display = "block";
-  }
-
-  function closeCvModal() {
-    document.getElementById("cvModal").style.display = "none";
-  }
-
-  window.onclick = function(e) {
-    const modal = document.getElementById("cvModal");
-    if (e.target === modal) modal.style.display = "none";
-  }
-</script>
-
-
 <body>
+
 <!-- ================= NAVBAR ================= -->
-<!-- ================= NAVBAR BURGER ================= -->
 <nav class="navbar">
   <div class="logo">Nassim Arous</div>
-  
-  <!-- Bouton burger -->
   <div class="burger" id="burger">
     <div></div>
     <div></div>
     <div></div>
   </div>
-  
-  <!-- Liens de navigation -->
   <ul class="nav-links" id="nav-links">
     <li><a href="#about">À propos</a></li>
     <li><a href="#experience">Stages</a></li>
@@ -59,101 +24,84 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-<!-- ================= HEADER ================= -->
+
+<!-- ================= HEADER / HERO ================= -->
 <header class="hero">
   <div class="hero-content">
-<img src="images/photo cv.jpeg" alt="Photo de Nassim Arous" class="profile-photo">    <div class="hero-text">
+    <img src="images/photo cv.jpeg" alt="Photo de Nassim Arous" class="profile-photo">
+    <div class="hero-text">
       <h1>Nassim Arous</h1>
       <h2>Élève Ingénieur – IA & Data</h2>
       <p>À la recherche d’un stage technique</p>
-<button class="btn-cv" onclick="openCvModal()">Voir le CV</button>
+      <button class="btn-cv" onclick="openCvModal()">Voir le CV</button>
     </div>
   </div>
 </header>
+
 <!-- ================= MODAL CV ================= -->
 <div id="cvModal" class="cv-modal">
   <div class="cv-modal-content">
     <span class="close" onclick="closeCvModal()">&times;</span>
     <h2>Choisir un CV</h2>
-
-    <a href="cv/NassimArousCvCanadien.pdf" target="_blank" class="cv-choice">
-         CV Canadien
-    </a>
-
-    <a href="cv/NassimArousCV.pdf" target="_blank" class="cv-choice">
-       CV Classique
-    </a>
+    <a href="cv/NassimArousCvCanadien.pdf" target="_blank" class="cv-choice">CV Canadien</a>
+    <a href="cv/NassimArousCV.pdf" target="_blank" class="cv-choice">CV Classique</a>
   </div>
 </div>
-
 
 <!-- ================= À PROPOS ================= -->
 <section id="about">
   <h2>À propos</h2>
-<p>
-Élève ingénieur en 4ᵉ année en Informatique et Réseaux, spécialisé en Intelligence Artificielle et Data Science.  
-Passionné par l’analyse de données, le développement logiciel et l’automatisation des systèmes, j’ai acquis des compétences solides en programmation (Python, Java, C++, C#, JavaScript), en bases de données (MySQL, MongoDB, SQL Server) et en administration Linux/Unix.  
-Grâce à mes projets académiques et mes stages professionnels, j’ai développé des solutions web et des outils intelligents pour optimiser les processus et faciliter la prise de décision.  
-Motivé, curieux et autonome, je recherche un stage technique stimulant où je pourrai contribuer concrètement et continuer à progresser.
-</p>
+  <p>
+    Élève ingénieur en 4ᵉ année en Informatique et Réseaux, spécialisé en Intelligence Artificielle et Data Science.  
+    Passionné par l’analyse de données, le développement logiciel et l’automatisation des systèmes, j’ai acquis des compétences solides en programmation (Python, Java, C++, C#, JavaScript), en bases de données (MySQL, MongoDB, SQL Server) et en administration Linux/Unix.  
+    Grâce à mes projets académiques et mes stages professionnels, j’ai développé des solutions web et des outils intelligents pour optimiser les processus et faciliter la prise de décision.  
+    Motivé, curieux et autonome, je recherche un stage technique stimulant où je pourrai contribuer concrètement et continuer à progresser.
+  </p>
 </section>
 
 <!-- ================= COMPÉTENCES ================= -->
 <section id="skills">
   <h2>Compétences</h2>
-
-
   <h3>Data & IA</h3>
   <p>Machine Learning, Analyse de données, Data Mining, Statistiques</p>
-
-
   <h3>Langages & Frameworks</h3>
   <p>Python, Java, C#, C++, C, JavaScript, React, PHP, Laravel, HTML, CSS</p>
-
-
-
   <h3>Bases de données</h3>
-  <p>MySQL, MongoDB,NoSQL, Oracle, SQL Server</p>
-
+  <p>MySQL, MongoDB, NoSQL, Oracle, SQL Server</p>
   <h3>Systèmes & Outils</h3>
   <p>Linux / Unix, Systemd, Streamlit, StarUML</p>
 </section>
-
-
-
 
 <!-- ================= STAGES ================= -->
 <section id="experience">
   <h2>Stages & Expériences</h2>
 
   <div class="experience">
-
-  <h3>     <img src="images/snop.png" alt="Logo SNOP Tanger" class="company-logo">
-       Stage ouvrier – SNOP Tanger</h3>
-  <span>Juillet 2025</span>
-  <p><strong>Réalisation & Compétences développées :</strong></p>
-  <ul>
-    <li>Participation à un projet de digitalisation industrielle dans une entreprise d’outillage automobile.</li>
-    <li>Développement d’une application web interne sous Laravel (PHP) pour la gestion des ordres de fabrication : création, suivi, validation et clôture.</li>
-    <li>Analyse des besoins des différents acteurs : administrateurs, planificateurs, opérateurs, superviseurs et agents de saisie.</li>
-    <li>Conception des interfaces et modélisation de la base de données.</li>
-    <li>Mise en place de l’architecture du système.</li>
-  </ul>
-</div>
+    <h3><img src="images/snop.png" alt="Logo SNOP Tanger" class="company-logo">Stage ouvrier – SNOP Tanger</h3>
+    <span>Juillet 2025</span>
+    <p><strong>Réalisation & Compétences développées :</strong></p>
+    <ul>
+      <li>Participation à un projet de digitalisation industrielle dans une entreprise d’outillage automobile.</li>
+      <li>Développement d’une application web interne sous Laravel (PHP) pour la gestion des ordres de fabrication : création, suivi, validation et clôture.</li>
+      <li>Analyse des besoins des différents acteurs : administrateurs, planificateurs, opérateurs, superviseurs et agents de saisie.</li>
+      <li>Conception des interfaces et modélisation de la base de données.</li>
+      <li>Mise en place de l’architecture du système.</li>
+    </ul>
+  </div>
 
   <div class="experience">
-  <h3>       <img src="images/logo onep.png" alt="Logo ONEE" class="company-logo">
-    Stage d’observation – ONEE (Branche Eau)</h3>
-  <span>Juillet 2024</span>
-  <p><strong>Réalisation & Compétences développées :</strong></p>
-  <ul>
-    <li>Participation à la maintenance des équipements informatiques et réseaux.</li>
-    <li>Découverte de l’infrastructure IT : postes, serveurs, imprimantes, réseau local.</li>
-    <li>Assistance aux opérations de diagnostic, dépannage et mises à jour logicielles.</li>
-    <li>Installation et configuration de matériels et postes utilisateurs, en respectant les bonnes pratiques de sécurité.</li>
-  </ul>
-</div>
+    <h3><img src="images/logo onep.png" alt="Logo ONEE" class="company-logo">Stage d’observation – ONEE (Branche Eau)</h3>
+    <span>Juillet 2024</span>
+    <p><strong>Réalisation & Compétences développées :</strong></p>
+    <ul>
+      <li>Participation à la maintenance des équipements informatiques et réseaux.</li>
+      <li>Découverte de l’infrastructure IT : postes, serveurs, imprimantes, réseau local.</li>
+      <li>Assistance aux opérations de diagnostic, dépannage et mises à jour logicielles.</li>
+      <li>Installation et configuration de matériels et postes utilisateurs, en respectant les bonnes pratiques de sécurité.</li>
+    </ul>
+  </div>
 </section>
+
 <!-- ================= PROJETS ================= -->
 <section id="projects">
   <h2>Projets Académiques & Techniques</h2>
@@ -162,8 +110,7 @@ Motivé, curieux et autonome, je recherche un stage technique stimulant où je p
     <h3>🔐 Détection de Fraude (Projet Majeur)</h3>
     <span>Décembre 2025 – Janvier 2026</span>
     <p><strong>Objectif :</strong> Identifier des transactions financières suspectes.</p>
-    <p><strong>Réalisation :</strong> Analyse des données, développement d’un modèle
-      d’analyse prédictive, détection d’anomalies et visualisation des résultats.</p>
+    <p><strong>Réalisation :</strong> Analyse des données, développement d’un modèle d’analyse prédictive, détection d’anomalies et visualisation des résultats.</p>
     <p><strong>Technologies :</strong> Python, Streamlit, MongoDB</p>
   </div>
 
@@ -171,8 +118,7 @@ Motivé, curieux et autonome, je recherche un stage technique stimulant où je p
     <h3>🚗 Prédiction des Prix de Voitures</h3>
     <span>Décembre 2025 – Janvier 2026</span>
     <p><strong>Objectif :</strong> Estimer le prix des véhicules selon leurs caractéristiques.</p>
-    <p><strong>Réalisation :</strong> Analyse exploratoire, algorithme de régression,
-      entraînement du modèle et application interactive.</p>
+    <p><strong>Réalisation :</strong> Analyse exploratoire, algorithme de régression, entraînement du modèle et application interactive.</p>
     <p><strong>Technologies :</strong> Python, Streamlit, MySQL</p>
   </div>
 
@@ -180,8 +126,7 @@ Motivé, curieux et autonome, je recherche un stage technique stimulant où je p
     <h3>📱 Gestion d’un Magasin de Réparation Téléphonique</h3>
     <span>Décembre 2025 – Janvier 2026</span>
     <p><strong>Objectif :</strong> Gérer les réparations et les clients.</p>
-    <p><strong>Réalisation :</strong> Gestion des clients, appareils, réparations,
-      facturation et base de données.</p>
+    <p><strong>Réalisation :</strong> Gestion des clients, appareils, réparations, facturation et base de données.</p>
     <p><strong>Technologies :</strong> Java, MySQL</p>
   </div>
 
@@ -189,8 +134,7 @@ Motivé, curieux et autonome, je recherche un stage technique stimulant où je p
     <h3>💊 Gestion d’une Parapharmacie</h3>
     <span>Décembre 2025 – Janvier 2026</span>
     <p><strong>Objectif :</strong> Gérer les stocks et les ventes.</p>
-    <p><strong>Réalisation :</strong> Gestion des produits, ventes,
-      fournisseurs et base de données.</p>
+    <p><strong>Réalisation :</strong> Gestion des produits, ventes, fournisseurs et base de données.</p>
     <p><strong>Technologies :</strong> C# .NET Core, SQL Server (SSMS)</p>
   </div>
 
@@ -198,8 +142,7 @@ Motivé, curieux et autonome, je recherche un stage technique stimulant où je p
     <h3>🔍 Détection de Plagiat</h3>
     <span>Avril 2025 – Juin 2025</span>
     <p><strong>Objectif :</strong> Détecter la similarité entre documents textuels.</p>
-    <p><strong>Réalisation :</strong> Implémentation d’algorithmes de comparaison
-      de chaînes et analyse de similarité.</p>
+    <p><strong>Réalisation :</strong> Implémentation d’algorithmes de comparaison de chaînes et analyse de similarité.</p>
     <p><strong>Technologies :</strong> Python, MySQL</p>
   </div>
 
@@ -207,8 +150,7 @@ Motivé, curieux et autonome, je recherche un stage technique stimulant où je p
     <h3>🚘 Gestion de Parc Automobile</h3>
     <span>Mars 2025 – Mai 2025</span>
     <p><strong>Objectif :</strong> Gérer un parc de véhicules.</p>
-    <p><strong>Réalisation :</strong> Gestion des véhicules, maintenance,
-      affectations et base de données.</p>
+    <p><strong>Réalisation :</strong> Gestion des véhicules, maintenance, affectations et base de données.</p>
     <p><strong>Technologies :</strong> Python, MySQL</p>
   </div>
 
@@ -216,8 +158,7 @@ Motivé, curieux et autonome, je recherche un stage technique stimulant où je p
     <h3>⚙️ Administration Unix : Automatisation & Systemd</h3>
     <span>Janvier 2026 – Février 2026</span>
     <p><strong>Objectif :</strong> Automatiser le démarrage de services critiques.</p>
-    <p><strong>Réalisation :</strong> Scripts Bash, configuration de targets systemd,
-      automatisation et tests.</p>
+    <p><strong>Réalisation :</strong> Scripts Bash, configuration de targets systemd, automatisation et tests.</p>
     <p><strong>Technologies :</strong> Linux, Bash, Systemd</p>
   </div>
 
@@ -225,8 +166,7 @@ Motivé, curieux et autonome, je recherche un stage technique stimulant où je p
     <h3>✈️ Gestion des Vols & Flux</h3>
     <span>Novembre 2024 – Décembre 2024</span>
     <p><strong>Objectif :</strong> Gérer les vols et flux de passagers.</p>
-    <p><strong>Réalisation :</strong> Implémentation de la logique métier,
-      manipulation de structures de données.</p>
+    <p><strong>Réalisation :</strong> Implémentation de la logique métier, manipulation de structures de données.</p>
     <p><strong>Technologies :</strong> C++</p>
   </div>
 
@@ -242,27 +182,45 @@ Motivé, curieux et autonome, je recherche un stage technique stimulant où je p
     <h3>🎬 Gestion des Films</h3>
     <span>Novembre 2024 – Décembre 2024</span>
     <p><strong>Objectif :</strong> Développer une application web de gestion de films.</p>
-    <p><strong>Réalisation :</strong> Interface dynamique, gestion des films
-      et composants React.</p>
+    <p><strong>Réalisation :</strong> Interface dynamique, gestion des films et composants React.</p>
     <p><strong>Technologies :</strong> React, JavaScript</p>
   </div>
-
 </section>
 
 <!-- ================= CONTACT ================= -->
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email : nassimarous@gmail.com</p>
-  <p>GitHub : github.com/NassimArous</p>
-  <p>LinkedIn : linkedin.com/in/NassimArous</p>
+  <p>Email : <a href="mailto:nassimarous@gmail.com">nassimarous@gmail.com</a></p>
+  <p>GitHub : <a href="https://github.com/NassimArous" target="_blank">github.com/NassimArous</a></p>
+  <p>LinkedIn : <a href="https://linkedin.com/in/NassimArous" target="_blank">linkedin.com/in/NassimArous</a></p>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
   <p>© 2026 Nassim Arous</p>
 </footer>
 
+<!-- ================= SCRIPTS ================= -->
+<script>
+  // Burger menu
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Modal CV
+  function openCvModal() {
+    document.getElementById("cvModal").style.display = "block";
+  }
+  function closeCvModal() {
+    document.getElementById("cvModal").style.display = "none";
+  }
+  window.onclick = function(e) {
+    const modal = document.getElementById("cvModal");
+    if (e.target === modal) modal.style.display = "none";
+  }
+</script>
+
 </body>
 </html>
-
-
-
